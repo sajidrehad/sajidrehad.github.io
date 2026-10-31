@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sajid Rana Rehad — Software QA Engineer, Open to Saudi Arabia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f8f6;--panel:#fff;--ink:#0e2417;--mute:#4d5f55;--line:#d5dfd8;--pass:#006c35;--passbg:#dcefe3;--bug:#c23b3b;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1816;--panel:#17231f;--ink:#e8f0ed;--mute:#9bacA6;--line:#2a3a35;--pass:#4fd49b;--passbg:#18382b;--bug:#ff7a7a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1816;--panel:#17231f;--ink:#e8f0ed;--mute:#9bacA6;--line:#2a3a35;--pass:#4fd49b;--passbg:#18382b;--bug:#ff7a7a;color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 "IBM Plex Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","IBM Plex Sans",system-ui,sans-serif;line-height:1.08;margin:0}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--pass);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+nav{display:flex;gap:22px;align-items:center;padding:20px 0;flex-wrap:wrap}
+nav a{text-decoration:none;color:var(--mute);font-weight:500}
+nav a:hover{color:var(--ink)}
+nav .brand{margin-right:auto;color:var(--ink);font-weight:500}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;padding:56px 0 80px}
+.hero h1{font-size:clamp(2.6rem,7vw,4.9rem);font-weight:800;letter-spacing:-.025em}
+.role{font-size:1.3rem;margin:18px 0 8px;font-weight:500}
+.lead{color:var(--mute);max-width:34em;margin:0 0 28px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;text-decoration:none;font-weight:500;border:1.5px solid var(--ink)}
+.btn.main{background:var(--ink);color:var(--bg)}
+.run{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px}
+.run h2{font-size:1.05rem;font-weight:600;margin-bottom:14px;color:var(--mute)}
+.run ul{list-style:none;margin:0;padding:0}
+.run li{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-top:1px solid var(--line);font-size:.98rem}
+.run li span.st{flex:none;width:22px;height:22px;border-radius:50%;border:2px solid var(--line);margin-top:2px;display:grid;place-items:center;font-size:13px;color:transparent;transition:all .3s}
+.run li.ok span.st{background:var(--pass);border-color:var(--pass);color:var(--bg)}
+.sum{margin-top:6px;padding-top:14px;border-top:1px solid var(--line);font-weight:500;color:var(--mute)}
+.sum b{color:var(--pass)}
+section{padding:64px 0;border-top:1px solid var(--line)}
+section>.wrap>h2{font-size:clamp(1.9rem,4vw,2.6rem);font-weight:800;margin-bottom:28px;letter-spacing:-.015em}
+.about{max-width:40em;font-size:1.1rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px}
+.card h3{font-size:1.15rem;margin-bottom:10px}
+.card p,.card li{color:var(--mute);margin:0;font-size:.97rem}
+.card ul{margin:0;padding-left:1.1em}
+.job{display:grid;grid-template-columns:200px 1fr;gap:28px}
+.job .when{color:var(--mute)}
+.job h3{font-size:1.5rem;margin-bottom:4px}
+.job ul{margin:16px 0 0;padding-left:1.1em;max-width:46em}
+.job li{margin-bottom:8px}
+.proj{display:grid;gap:18px}
+.proj details{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px 22px}
+.proj summary{cursor:pointer;display:flex;gap:12px;align-items:center;flex-wrap:wrap;font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:600;font-size:1.2rem}
+.tag{font:500 .8rem "IBM Plex Sans",system-ui,sans-serif;background:var(--passbg);color:var(--pass);padding:3px 11px;border-radius:999px}
+.proj ul{margin:14px 0 4px;padding-left:1.1em;color:var(--mute)}
+.proj li{margin-bottom:6px}
+.edu{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.edu p{margin:4px 0 0;color:var(--mute)}
+.contact a.big{display:block;font:800 clamp(1.5rem,5vw,2.8rem)/1.2 "Bricolage Grotesque",system-ui,sans-serif;word-break:break-word;margin-bottom:22px}
+.links{display:flex;gap:12px;flex-wrap:wrap}
+footer{padding:36px 0 56px;color:var(--mute);border-top:1px solid var(--line);font-size:.92rem}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;padding-bottom:64px}.facts .card{border-top:4px solid var(--pass)}.facts h3{font-size:.95rem;color:var(--mute);font-weight:600;margin-bottom:6px}.facts p{color:var(--ink);font-weight:500;font-size:1.02rem}
+@media (max-width:760px){.hero{grid-template-columns:1fr;gap:36px;padding-top:28px}.job{grid-template-columns:1fr;gap:6px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav aria-label="Main">
+<a class="brand" href="#top">Sajid Rehad</a>
+<a href="#sectors">Sectors</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+</nav>
+
+<header class="hero" id="top">
+<div>
+<h1>Sajid Rana Rehad</h1>
+<p class="role">Software Quality Assurance Engineer</p>
+<p class="lead">I test government ERP, healthcare and consumer platforms so they work reliably from the first release. I am seeking a Software QA role in Saudi Arabia and I am ready to relocate with employer visa sponsorship.</p>
+<div class="btns"><a class="btn main" href="#contact">Get in touch</a><a class="btn" href="#projects">See my projects</a></div>
+</div>
+<aside class="run" aria-label="Sample test run">
+<h2>Test run: what I do every release</h2>
+<ul id="tests">
+<li><span class="st" aria-hidden="true">✓</span>Functional and regression suites, automated with Playwright</li>
+<li><span class="st" aria-hidden="true">✓</span>API checks in Postman for data integrity</li>
+<li><span class="st" aria-hidden="true">✓</span>Load, stress, spike and endurance runs in JMeter</li>
+<li><span class="st" aria-hidden="true">✓</span>Beacon FIFA 2026 tested for 2,000+ active users</li>
+</ul>
+<div class="sum" id="sum">Running…</div>
+</aside>
+</header>
+</div>
+
+<div class="wrap facts">
+<div class="card"><h3>Target role</h3><p>Software QA Engineer, Saudi Arabia</p></div>
+<div class="card"><h3>Availability</h3><p>Ready to relocate. Visa sponsorship required</p></div>
+<div class="card"><h3>Nationality</h3><p>Bangladeshi</p></div>
+<div class="card"><h3>Working language</h3><p>English, professional proficiency</p></div>
+</div>
+
+<section id="about"><div class="wrap">
+<h2>About</h2>
+<p class="about">I have hands-on experience in manual and automation testing, API and performance testing, and content ownership. I design test cases, run functional, regression and UAT cycles, and work closely with developers and business teams to ship reliable software. I also write and manage the quiz and prediction content for Beacon FIFA 2026.</p>
+</div></section>
+
+<section id="sectors"><div class="wrap">
+<h2>Sectors I have tested</h2>
+<div class="grid">
+<div class="card"><h3>Government and public sector</h3><p>BSCIC ERP and the Mongla Port inventory system: approvals, ledgers, reports and role-based access.</p></div>
+<div class="card"><h3>Healthcare</h3><p>Beacon Patient Passport: patient data accuracy, workflows and access control.</p></div>
+<div class="card"><h3>Enterprise ERP and HR</h3><p>HRM, inventory, budget, accounts, sales and loan modules, tested end to end.</p></div>
+<div class="card"><h3>High-traffic consumer web</h3><p>Beacon FIFA 2026: testing and content for 2,000+ active users.</p></div>
+</div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+<h2>Experience</h2>
+<div class="job">
+<div class="when">Oct 2025 – Present<br>Sweet iTech Limited</div>
+<div>
+<h3>Software QA Engineer</h3>
+<ul>
+<li>Designed and ran manual test cases for web and software applications across multiple client projects.</li>
+<li>Built and maintained Playwright scripts to support regression testing.</li>
+<li>Ran functional, regression, sanity and JMeter performance tests before each release.</li>
+<li>Tested backend functionality and data integrity with Postman.</li>
+<li>Wrote UAT plans, test cases and scenarios from business requirements.</li>
+<li>Analyzed and documented requirements for several projects at once.</li>
+<li>Logged, tracked and retested defects with developers until they were resolved.</li>
+<li>Created and managed quiz and prediction content for Beacon FIFA 2026.</li>
+</ul>
+</div>
+</div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+<h2>Projects</h2>
+<div class="proj">
+<details open><summary>Beacon FIFA 2026 <span class="tag">Testing + content</span></summary>
+<ul><li>Functional, regression and sanity testing ahead of high-traffic tournament events.</li><li>Wrote and managed quiz and prediction question sets, including structuring prediction rounds and keeping everything accurate.</li><li>Supported a platform that scaled to 2,000+ active users.</li></ul></details>
+<details><summary>Beacon Patient Passport <span class="tag">Healthcare</span></summary>
+<ul><li>Manual functional and regression testing of a patient-passport management platform.</li><li>Verified patient data accuracy, workflow transitions and role-based access across modules.</li><li>Logged and tracked defects, then retested fixes with developers.</li></ul></details>
+<details><summary>BSCIC ERP <span class="tag">Enterprise</span></summary>
+<ul><li>Tested the HRM, Inventory, Loan, CPF, Budget and Accounts modules for Bangladesh Small and Cottage Industries Corporation.</li><li>Validated financial transactions, reports and approval workflows.</li><li>Checked data integrity and consistency across connected modules.</li></ul></details>
+<details><summary>Mongla Port Inventory Automation System <span class="tag">Enterprise</span></summary>
+<ul><li>Tested stock in, stock out, requisition, returns and stock count workflows.</li><li>Validated role-based access for admin, warehouse and department users.</li><li>Tested data flow between inventory, ledger and reporting modules.</li><li>Wrote basic Selenium automation for regression testing of critical features.</li></ul></details>
+<details><summary>ColonyHR <span class="tag">HR + Sales</span></summary>
+<ul><li>Tested the HR Management System, Sales Module and Inventory Management System.</li></ul></details>
+</div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+<h2>Skills</h2>
+<div class="grid">
+<div class="card"><h3>Manual testing</h3><p>Functional, regression, smoke, sanity and UAT</p></div>
+<div class="card"><h3>Automation</h3><p>Playwright, plus basic Selenium</p></div>
+<div class="card"><h3>API testing</h3><p>Postman</p></div>
+<div class="card"><h3>Performance</h3><p>JMeter: load, stress, spike and endurance</p></div>
+<div class="card"><h3>Test design</h3><p>Test cases and scenarios, requirement analysis and documentation</p></div>
+<div class="card"><h3>Process</h3><p>Defect lifecycle management, Agile and Scrum: stand-ups, sprint planning, reviews and retrospectives</p></div>
+</div>
+</div></section>
+
+<section id="education"><div class="wrap">
+<h2>Education and languages</h2>
+<div class="edu">
+<div class="card"><h3>Diploma in Computer Science and Technology</h3><p>Shyamoli Ideal Polytechnic Institute<br>2021 – present</p></div>
+<div class="card"><h3>Secondary School Certificate, Business Studies</h3><p>Bosila High School, 2021<br>GPA 3.92</p></div>
+<div class="card"><h3>Languages</h3><p>Bangla (native)<br>English (professional working proficiency)</p></div>
+</div>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+<h2>Contact</h2>
+<p class="about">I am available to join a team in Saudi Arabia and can attend interviews online. Please contact me by email or WhatsApp.</p>
+<a class="big" href="mailto:sazidrehad@gmail.com">sazidrehad@gmail.com</a>
+<div class="links">
+<a class="btn main" href="https://wa.me/8801642573907">WhatsApp</a>
+<a class="btn" href="https://linkedin.com/in/sajid-rehad">LinkedIn</a>
+<a class="btn" href="https://github.com/sajidrehad">GitHub</a>
+</div>
+</div></section>
+
+<footer><div class="wrap">Sajid Rana Rehad, Dhaka, Bangladesh. Nationality: Bangladeshi.</div></footer>
+
+<script>
+(function(){
+var items=[].slice.call(document.querySelectorAll('#tests li')),sum=document.getElementById('sum');
+function done(){sum.innerHTML='<b>'+items.length+' of '+items.length+'</b> checks passed'}
+if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){items.forEach(function(i){i.classList.add('ok')});done();return}
+items.forEach(function(li,n){setTimeout(function(){li.classList.add('ok');if(n===items.length-1)done()},500+n*650)});
+})();
+</script>
+</body>
+</html>
